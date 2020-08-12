@@ -37,7 +37,7 @@ db.Create(&animal)
 // animal.Name => 'galeone'
 ```
 
-**NOTE** all fields having a zero value, like `0`, `''`, `false` or other [zero values](https://tour.golang.org/basics/12), won't be saved into the database but will use its default value. If you want to avoid this, consider using a pointer type or scanner/valuer, e.g:
+**NOTE** all fields having a zero value, like `0`, `''`, `false` or other [zero values](https://tour.golang.org/basics/12), will be saved into the database. If you want to avoid this, consider using a pointer type or scanner/valuer, e.g:
 
 ```go
 // Use pointer value
